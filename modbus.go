@@ -19,3 +19,12 @@ func modbusOpen() error {
 func ttt() {
 	//buf, err := modbusClient.ReadCoils(0, 10)
 }
+
+type Modbus struct {
+	client  modbus.Client
+	devices []Device
+}
+
+func (m *Modbus) Load(cfg string) {
+
+}
